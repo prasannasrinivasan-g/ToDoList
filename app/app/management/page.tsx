@@ -1,5 +1,5 @@
 'use client';
-import Management from '@/components/Management';
+import TaskManager from '@/components/TaskManager';
 
 export default function ManagementPage() {
   return (
@@ -10,7 +10,7 @@ export default function ManagementPage() {
         </h1>
         <p className="text-gray-400">Add, edit, and organize your tasks</p>
       </div>
-      <Management />
+      <TaskManager />
     </div>
   );
 }
