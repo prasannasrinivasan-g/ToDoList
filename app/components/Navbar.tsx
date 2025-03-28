@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FiHome, FiList, FiSettings } from 'react-icons/fi';
+import { FiHome, FiList, FiZap } from 'react-icons/fi';
 
 export default function Navbar() {
   return (
@@ -7,9 +7,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-2 text-[#60a5fa] font-semibold text-lg">
-              <FiList className="w-6 h-6" />
-              <span className="bg-gradient-to-r from-[#60a5fa] to-[#93c5fd] text-transparent bg-clip-text">TodoApp</span>
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative flex items-center justify-center w-10 h-10">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#60a5fa] to-[#3b82f6] opacity-75 rounded-xl group-hover:opacity-100 transition-all duration-300" />
+                <FiZap className="w-5 h-5 text-white relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
+              </div>
+              <span className="text-xl font-bold text-white tracking-tight">
+                Taskify<span className="text-[#60a5fa]">.</span>
+              </span>
             </Link>
           </div>
           
